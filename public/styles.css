@@ -58,3 +58,69 @@ html, body {
   color: var(--muted);
   line-height: 1.7;
 }
+
+/* ── מצבי תצוגה (login / app) ── */
+.view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lead {
+  text-align: center;
+  color: var(--muted);
+  margin: 24px 0 16px;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  background: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.btn-google:active { transform: scale(0.98); }
+
+.warning {
+  margin-top: 16px;
+  text-align: center;
+  color: #fbbf24;
+  font-size: 0.9rem;
+}
+
+.warning code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+/* ── שורת חשבון (מצב מחובר) ── */
+.account-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 4px;
+}
+
+.user-email {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 6px 8px;
+}

@@ -40,10 +40,22 @@ supabase/
 vercel.json             # הגדרות פריסה
 ```
 
+## הרצה מקומית
+
+ה-PWA משתמש ב-ES modules, אז חייבים להגיש אותו דרך שרת (לא לפתוח את הקובץ ישירות):
+
+```
+npx serve public        # או: python -m http.server 3000 --directory public
+```
+
+לפני התחברות צריך למלא ב-`public/config.js` את `SUPABASE_URL` ו-`SUPABASE_ANON_KEY`,
+ולהוסיף את כתובת ההרצה (למשל `http://localhost:3000`) ב-Supabase תחת
+Authentication → URL Configuration → Redirect URLs.
+
 ## סטטוס פיתוח
 
 - [x] שלב 1 — תשתית ושלד
-- [ ] שלב 2 — התחברות Google
+- [x] שלב 2 — התחברות Google (קוד מוכן; מחכה לפרטי Supabase לבדיקה)
 - [ ] שלב 3 — הקלטה + תמלול (Groq Whisper)
 - [ ] שלב 4 — סיווג + שמירה (Claude Haiku)
 - [ ] שלב 5 — דשבורד (רשימה, סינון, העתקה, תיקון ידני)
