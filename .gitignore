@@ -1,0 +1,22 @@
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+*.key
+
+# Dependencies
+node_modules/
+
+# Supabase local
+supabase/.branches/
+supabase/.temp/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
